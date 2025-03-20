@@ -44,7 +44,7 @@ content = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Table Background</title>
+    <title>Top Software Company </title>
     <style>
         body {
             background: linear-gradient(45deg, #FF9A8B, #FF6A88, #FF99AC);
