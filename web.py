@@ -3,83 +3,125 @@ content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Software Company </title>
-    <style>
-        body {
-            background: linear-gradient(45deg, #FF9A8B, #FF6A88, #FF99AC);
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
-        table {
-            border-collapse: collapse;
-            width: 60%;
-            height: auto;
-            background: rgba(255, 255, 255, 0.8);
-            color: #2c2c2c;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-        }
-        th, td {
-            border: 2px solid #2C2C2C;
-            padding: 12px;
-            text-align: center;
-            font-size: 18px;
-        }
-        th {
-            background-color: rgba(44, 44, 44, 0.9);
-            color: white;
-        }
-        caption {
-            font-size: 22px;
-            font-weight: bold;
-            padding: 10px;
-            color: #2C2C2C;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>TCP/IP Protocol </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f6fc;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    .layer {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 6px solid #1976d2;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .layer:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .layer h2 {
+      color: #0d47a1;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 25px;
+    }
+
+    ul li {
+      padding: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    <table>
-        <caption>📊 TOP SOFTWARE COMPANIES 📈</caption>
-        <tr>
-            <th>Company</th>
-            <th>Revenue ($)</th>
-            <th>Rank</th>
-        </tr>
-        <tr>
-            <td>Google</td>
-            <td>154,869</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>Meta</td>
-            <td>458,963</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>OpenAI</td>
-            <td>874,456</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Nvidia</td>
-            <td>789,645</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>Intel</td>
-            <td>784,684</td>
-            <td>5</td>
-        </tr>
-    </table>
+
+  <header>
+    <h1>TCP/IP Protocol 🛜</h1>
+  </header>
+
+  <div class="layer">
+    <h2>1. Application Layer</h2>
+    <ul>
+      <li>HTTP</li>
+      <li>FTP</li>
+      <li>SMTP</li>
+      <li>DNS</li>
+      <li>Telnet</li>
+      <li>SSH</li>
+    </ul>
+  </div>
+
+  <div class="layer">
+    <h2>2. Transport Layer</h2>
+    <ul>
+      <li>TCP (Transmission Control Protocol)</li>
+      <li>UDP (User Datagram Protocol)</li>
+    </ul>
+  </div>
+
+  <div class="layer">
+    <h2>3. Internet Layer</h2>
+    <ul>
+      <li>IP (Internet Protocol)</li>
+      <li>ICMP (Internet Control Message Protocol)</li>
+      <li>ARP (Address Resolution Protocol)</li>
+      <li>IGMP (Internet Group Management Protocol)</li>
+    </ul>
+  </div>
+
+  <div class="layer">
+    <h2>4. Network Access Layer</h2>
+    <ul>
+      <li>Ethernet</li>
+      <li>Wi-Fi</li>
+      <li>PPP (Point-to-Point Protocol)</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Paul Shervin | TCP/IP</p>
+  </footer>
+
 </body>
 </html>
+
 
 """
 class myhandler(BaseHTTPRequestHandler):
